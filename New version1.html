@@ -1,5 +1,11 @@
 <html>
 <head>
+<title>
+CCE
+</title>
+<link rel="stylesheet" href="style.css">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="map.js"></script>
 </head>
 <body>
 <center>
@@ -8,8 +14,18 @@
 <p>
 <input type="text" id="find" name="plz" onchange="a_value(this);">
 </input>
+<p>
+<button onclick="a.value(o)">
+Получить рекомендации
+</button>
+</p>
+<p>
+<div id="map" class="map"></div>
+</p>
 </p>
 </center>
+
+<p>
 <script type="text/javascript">
 function a_value(o){
 if (o.value == "Мегино-Кангаласский"){
@@ -48,11 +64,8 @@ document.write("Вилю́йский улу́с (райо́н) (якут. Бүл
 }
 }
 </script>
-<center>
-<button onclick="a.value(o)">
-Получить рекомендации
-</button>
-</center>
+</p>
+
 </body>
 </html>
 
