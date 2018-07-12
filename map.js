@@ -1,7 +1,8 @@
 
 function initMap() {
+	
     
-    var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
+    var centerLatLng = new google.maps.LatLng(61, 129);
  
     
     var mapOptions = {
@@ -11,6 +12,11 @@ function initMap() {
  
     
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	var marker = new google.maps.Marker({
+		position: centerLatLng,
+		map: map,
+		title: "Текущее местоположение",
+	});
 }
  
 
